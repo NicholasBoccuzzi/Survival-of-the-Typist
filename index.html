@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./master.scss">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <title>Survival of the Typist</title>
+  </head>
+  <body>
+
+    <main class="game-container flex-row">
+      <div class="flex-col left-margin animated slideInLeft">
+          <div class="sound-button">
+            <div class="flex-row centered">
+              <i class="fa fa-volume-up volume" aria-hidden="true" class="black"></i>
+              <div class="small-text">
+                Toggle Music
+              </div>
+            </div>
+          </div>
+        <section class="directions-container">
+
+        </section>
+        <div class="flash-container shadow-left">
+          <div id="flash" class="flash">
+          </div>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="animated slideInDown">
+          <div class="title-text">
+          Survival of the Typist
+          </div>
+        </div>
+        <div class="flex-col animated slideInUp">
+          <canvas id="survivalTypist" class="canvas">
+            <div class="white">
+              Hello
+            </div>
+          </canvas>
+          <input class="keyboard-input" type="text" id="myInput" value="" placeholder="CLICK HERE TO TYPE"></input>
+        </div>
+      </div>
+
+      <div class="flex-col right-margin align-left animated slideInRight">
+        <div class="sound-button">
+          <div class="flex-row align-right">
+            <div class="small-text space-right">
+              Toggle Music
+            </div>
+            <i class="fa fa-volume-up volume flipped" aria-hidden="true" class="black"></i>
+            <audio src="./audio/background.mp3" id="backgroundBeats" loop="true" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+        <div class="directions-container">
+
+        </div>
+        <div class="flash-container shadow-right">
+          <div id="flash" class="flash">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <audio src="./audio/blaster.mp3" id="blasterFired"/>
+    <script type="application/javascript" src="keybinding/keymaster.js"></script>
+    <script type="application/javascript" src="lib/bundle.js"></script>
+    <script type="text/javascript" src="lib/disable_paste.js"></script>
+    <script type="text/javascript" src="lib/track_mouse.js"></script>
+
+    </script>
+
+    </script>
+  </body>
+</html>

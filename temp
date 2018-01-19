@@ -1,0 +1,26 @@
+
+GameView.MOVESSLOWER = {
+  w: [0, 5],
+  a: [5, 0],
+  s: [0, -5],
+  d: [-5, 0]
+};
+
+document.addEventListener("keydown", (e) => {
+  debugger
+  if (e.key === k) {
+    this.avatar.modifySpeed(e, moveFaster);
+  }
+});
+
+document.addEventListener("keyup", (e) => {
+  if (e.key === k) {
+    this.avatar.modifySpeed(e, moveSlower);
+  }
+});
+
+modifySpeed (e, move) {
+  e.preventDefault();
+
+  this.power(move);
+}
