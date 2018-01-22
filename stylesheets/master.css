@@ -36,8 +36,7 @@ body {
   color: white;
   font-size: 50px;
   align-self: center;
-
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: auto;
 }
 
@@ -92,6 +91,8 @@ body {
   background: black;
   color: black;
   box-shadow: 0px 4px 10px 4px white;
+  border-top: 2px solid white;
+  margin-top: 8px;
 }
 
 .keyboard-input:focus {
@@ -108,7 +109,7 @@ body {
 
 .sound-button {
   background: transparent;
-  font-size: 30px;
+  font-size: 20px;
   width: 40px;
   height: 40px;
   color: white;
@@ -208,7 +209,7 @@ box-shadow: 4px 4px 10px #00FF00;
 
 .directions-container {
   border: 2px solid white;
-  margin-top: 70px;
+  margin-top: 50px;
   width: 250px;
   height: 400px;
   background: black;
@@ -217,11 +218,27 @@ box-shadow: 4px 4px 10px #00FF00;
 }
 
 .ui-li {
-  width: 125px;
-  height: 50px;
-  border-bottom: 2px solid white;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 4px;
 }
 
-.border-right {
-  border-right: 2px solid white;
+.yellow {
+  color: yellow;
+}
+
+.red {
+  color: red;
+}
+
+.ui-containers {
+  width: 600px;
+  border: 2px solid white;
+  border-top: none;
+  height: 20px;
+  background:black;
+  z-index: 10;
+  text-align: left;
+  justify-content: space-around;
 }
