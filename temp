@@ -7,7 +7,6 @@ GameView.MOVESSLOWER = {
 };
 
 document.addEventListener("keydown", (e) => {
-  debugger
   if (e.key === k) {
     this.avatar.modifySpeed(e, moveFaster);
   }
@@ -24,3 +23,8 @@ modifySpeed (e, move) {
 
   this.power(move);
 }
+
+
+#ffffff
+#fffa00
+#ff9138

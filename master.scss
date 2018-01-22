@@ -47,7 +47,7 @@ body {
 }
 
 .flash-text {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .small-text {
@@ -148,10 +148,11 @@ body {
   background: black;
   border: 2px solid lightgreen;
   width: 250px;
-  height: 40px;
+  height: 80px;
   color: white;
+  margin-top: 10px;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .shadow-right {
@@ -163,7 +164,7 @@ box-shadow: 4px 4px 10px #00FF00;
 }
 
 .flash {
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 .flipped {
