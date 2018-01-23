@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  background-image: url("../images/backgroundGrid.png");
+  background-image: url("../images/trippybackground.gif");
+  background-size: cover;
   font-family: 'Press Start 2P', sans-serif;
-
 }
 
 
@@ -34,6 +34,11 @@ body {
 .title-text {
   font-family: 'Press Start 2P', sans-serif;
   color: white;
+  text-shadow:
+    -2px -2px 0 #00FFFF,
+    2px -2px 0 #FFFF00,
+    -2px 2px 0 #FF00FF,
+    2px 2px 0 #00FF00;
   font-size: 50px;
   align-self: center;
   margin-bottom: 10px;
@@ -208,6 +213,7 @@ box-shadow: 4px 4px 10px #00FF00;
 }
 
 .directions-container {
+  font-family: 'Geo', sans-serif;
   border: 2px solid white;
   margin-top: 50px;
   width: 250px;
@@ -215,6 +221,7 @@ box-shadow: 4px 4px 10px #00FF00;
   background: black;
   box-shadow: 0px -2px 10px white;
   text-align: center;
+  color: white;
 }
 
 .ui-li {
@@ -230,6 +237,10 @@ box-shadow: 4px 4px 10px #00FF00;
 
 .red {
   color: red;
+}
+
+.left-indent {
+  margin-left: 35px;
 }
 
 .ui-containers {

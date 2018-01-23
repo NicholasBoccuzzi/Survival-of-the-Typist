@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./stylesheets/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Faster+One|Geo:400i" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <title>Survival of the Typist</title>
+    <title>Survival by the Typist</title>
   </head>
   <body>
 
     <main class="game-container flex-row">
       <div class="flex-col left-margin animated slideInLeft">
-          <div class="sound-button">
+          <div class="sound-button left-indent">
             <div class="flex-row centered">
               <i class="fa fa-volume-up volume" aria-hidden="true" class="black"></i>
               <div class="small-text">
@@ -21,6 +21,11 @@
             </div>
           </div>
         <section class="directions-container">
+          <div class="directions-title">Background</div>
+          <div class="story">
+            You are a typist. Typists are assigned Squares. This is your square, Red. Red is controlled by the Typist.
+            Red can only function through your commands. Protect Red from the onslaught!
+          </div>
           <div class="directions-title">Typist Commands</div>
           <ul class="directions-list">
             <div class="directions-li">start</div>
@@ -39,7 +44,7 @@
           Survival of the Typist
           </div>
         </div>
-        <div class="flex-col animated slideInUp">
+        <div class="flex-col animated zoomIn">
           <canvas id="survivalTypist" class="canvas">
             <div class="white">
               Hello
@@ -92,7 +97,7 @@
       </div>
     </main>
 
-    <audio src="./audio/blaster.mp3" id="blasterFired"/>
+    <audio src="./audio/RandF.mp3" id="intro"/>
     <script type="application/javascript" src="keybinding/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
     <script type="text/javascript" src="lib/disable_paste.js"></script>
