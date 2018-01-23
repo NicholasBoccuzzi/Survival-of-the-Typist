@@ -1,30 +1,14 @@
-
-GameView.MOVESSLOWER = {
-  w: [0, 5],
-  a: [5, 0],
-  s: [0, -5],
-  d: [-5, 0]
-};
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === k) {
-    this.avatar.modifySpeed(e, moveFaster);
-  }
-});
-
-document.addEventListener("keyup", (e) => {
-  if (e.key === k) {
-    this.avatar.modifySpeed(e, moveSlower);
-  }
-});
-
-modifySpeed (e, move) {
-  e.preventDefault();
-
-  this.power(move);
-}
-
-
-#ffffff
-#fffa00
-#ff9138
+// Temp1
+// temperEnemySpeed() {
+//   if (this.vel[0] > MovingObject.MAXENEMYSPEED) {
+//     this.vel[0] = MovingObject.MAXENEMYSPEED;
+//   } else if (this.vel[0] < MovingObject.MINENEMYSPEED) {
+//     this.vel[0] = MovingObject.MINENEMYSPEED;
+//   }
+//
+//   if (this.vel[1] > MovingObject.MAXENEMYSPEED) {
+//     this.vel[1] = MovingObject.MAXENEMYSPEED;
+//   } else if (this.vel[1] < MovingObject.MINENEMYSPEED) {
+//     this.vel[1] = MovingObject.MINENEMYSPEED;
+//   }
+// }

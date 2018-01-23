@@ -5,6 +5,11 @@ body {
   font-family: 'Press Start 2P', sans-serif;
 }
 
+p {
+  margin: 0;
+  align-items: center;
+}
+
 
 .left-margin {
   margin-left: 15%;
@@ -129,10 +134,10 @@ body {
 
 @keyframes color {
   0%  {color: white;}
-  20% {color: #00FFFF;}
-  40% {color: #FFFF00;}
-  60% {color: #FF00FF;}
-  80% {color: #00FF00;}
+  20% {color: #00FFFF;} /* Blue */
+  40% {color: #FFFF00;} /* Yellow */
+  60% {color: #FF00FF;} /* Pink */
+  80% {color: #00FF00;} /* Green */
   100% {color: white;}
 }
 
@@ -272,4 +277,11 @@ border: 2px solid white;
 .story {
   padding: 0px 20px;
   margin-bottom: 30px;
+}
+
+.RedSquare {
+  display: inline-block;
+  border: 5px solid red;
+  width: 0px;
+  margin-right: 5px;
 }
