@@ -1,8 +1,15 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   background-image: url("../images/trippybackground.gif");
   background-size: cover;
+  background-position: center;
   font-family: 'Press Start 2P', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -269,9 +276,8 @@ border: 2px solid white;
 }
 
 .letter-container {
-  margin-left: 15px;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .story {
@@ -284,4 +290,11 @@ border: 2px solid white;
   border: 5px solid red;
   width: 0px;
   margin-right: 5px;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: .5 0 auto;
 }
