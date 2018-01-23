@@ -253,3 +253,22 @@ box-shadow: 4px 4px 10px #00FF00;
   text-align: left;
   justify-content: space-around;
 }
+
+.Letters {
+font-size: 20px;
+color: white;
+width: 20px;
+padding: 10px;
+border: 2px solid white;
+}
+
+.letter-container {
+  margin-left: 15px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.story {
+  padding: 0px 20px;
+  margin-bottom: 30px;
+}
