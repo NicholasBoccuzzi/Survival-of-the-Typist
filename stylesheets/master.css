@@ -212,8 +212,8 @@ box-shadow: 4px 4px 10px #00FF00;
 }
 
 .directions-li {
-  font-size: 14px;
-  margin: 10px 0px 10px 20px;
+  font-size: 18px;
+  margin: 10px 0px 10px 0px;
   text-decoration: none;
 
 }
