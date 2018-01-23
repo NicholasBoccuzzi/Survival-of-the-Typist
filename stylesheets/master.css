@@ -57,11 +57,6 @@ p {
   width: auto;
 }
 
-.white {
-  color:white;
-  z-index: 0;
-}
-
 .flash-text {
   font-size: 50px;
 }
@@ -103,12 +98,12 @@ p {
   font-size: 20px;
   font-family: 'Press Start 2P', sans-serif;
   text-align: center;
-  border: 2px solid white;
+  border: 2px solid #00FFFF;
   border-top: none;
   background: black;
   color: black;
-  box-shadow: 0px 4px 10px 4px white;
-  border-top: 2px solid white;
+  box-shadow: 0px 4px 10px 4px #00FFFF;
+  border-top: 2px solid #00FFFF;
   margin-top: 8px;
 }
 
@@ -116,7 +111,8 @@ p {
   background: black;
   outline: white;
   color: white;
-  box-shadow: 0px 4px 10px 4px #00FF00;
+  border-color: white;
+  box-shadow: 0px 4px 10px 4px white;
 }
 
 .game-container {
@@ -191,15 +187,19 @@ box-shadow: 4px 4px 10px #00FF00;
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 16px;
+  text-shadow: none;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   font-size: 16px;
+  text-shadow: none;
 }
 :-ms-input-placeholder { /* IE 10+ */
   font-size: 16px;
+  text-shadow: none;
 }
 :-moz-placeholder { /* Firefox 18- */
   font-size: 16px;
+  text-shadow: none;
 }
 
 .directions-list {
@@ -226,12 +226,12 @@ box-shadow: 4px 4px 10px #00FF00;
 
 .directions-container {
   font-family: 'Geo', sans-serif;
-  border: 2px solid white;
+  border: 2px solid #FF00FF;
   margin-top: 50px;
   width: 250px;
   height: 400px;
   background: black;
-  box-shadow: 0px -2px 10px white;
+  box-shadow: 0px -3px 10px #FF00FF;
   text-align: center;
   color: white;
 }
@@ -243,9 +243,19 @@ box-shadow: 4px 4px 10px #00FF00;
     margin-top: 4px;
 }
 
-.yellow {
-  color: yellow;
+.blue {
+  color: #00FFFF;
 }
+
+.white {
+  color:white;
+  z-index: 0;
+}
+
+.yellow {
+  color: #FFFF00;
+}
+
 
 .red {
   color: red;
@@ -271,18 +281,28 @@ box-shadow: 4px 4px 10px #00FF00;
 font-size: 20px;
 color: white;
 width: 20px;
-padding: 10px;
+padding: 5px;
 border: 2px solid white;
+}
+
+.space-enter {
+  font-size: 14px;
+  border: 2px solid white;
+  width: 100px;
+  padding: 5px;
 }
 
 .letter-container {
   text-align: center;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 .story {
+  font-size: 16px;
   padding: 0px 20px;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .RedSquare {

@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Faster+One|Geo:400i" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <title>Survival by the Typist</title>
+    <title>Survival of the Typist</title>
   </head>
   <body>
 
@@ -24,7 +24,7 @@
         <section class="directions-container">
           <div class="directions-title">Intro</div>
           <div class="story">
-            <p>You are a typist.</p>
+            <p>You are a Typist.</p>
             Typists are assigned Squares.
             <p>
               <div class="RedSquare"></div> Red is your Square.
@@ -36,7 +36,9 @@
           <ul class="directions-list">
             <div class="directions-li">start</div>
             <div class="directions-li">reload</div>
+            <div class="directions-li">shield</div>
             <div class="directions-li">teleport</div>
+
           </ul>
         </section>
         <div class="flash-container shadow-left">
@@ -50,7 +52,7 @@
           Survival of the Typist
           </div>
         </div>
-        <div class="flex-col animated zoomIn">
+        <div class="flex-col animated fadeIn">
           <canvas id="survivalTypist" class="canvas">
             <div class="white">
               Hello
@@ -58,7 +60,7 @@
           </canvas>
           <div class="flex-row ui-containers">
             <div class="ui-li border-right flex-row">
-              A: <div id="ammo">
+              A: <div class="blue" id="ammo">
               </div>
             </div>
             <div class="ui-li border-right flex-row">
@@ -71,7 +73,7 @@
             </div>
 
           </div>
-          <input class="keyboard-input" type="text" id="myInput" value="" placeholder="CLICK HERE TO TYPE"></input>
+          <input class="keyboard-input" type="text" id="myInput" value="" placeholder="TYPE START AND PRESS ENTER TO BEGIN"></input>
         </div>
       </div>
 
@@ -91,19 +93,50 @@
             Controls
           </div>
           <div class="flex-row letter-container">
-            <div class="Letters">
-              W
+            <div class="flex-col">
+              <div class="Letters">
+                W
+              </div>
+              Up
             </div>
-            <div class="Letters">
-              A
+            <div class="flex-col">
+              <div class="Letters">
+                S
+              </div>
+              Down
             </div>
-            <div class="Letters">
-              S
+            <div class="flex-col">
+              <div class="Letters">
+                A
+              </div>
+              Left
             </div>
-            <div class="Letters">
-              D
+            <div class="flex-col">
+              <div class="Letters">
+                D
+              </div>
+              Right
             </div>
           </div>
+          <div class="flex-row letter-container">
+            <div class="flex-col">
+              <div class="space-enter">
+                Enter
+              </div>
+            <div class="flex-row">  Game || <div class="blue">Text Input</div></div>
+            </div>
+            <div class="flex-col">
+              <div class="space-enter">
+                Space
+              </div>
+              Fire Blaster
+            </div>
+          </div>
+          <div>
+
+
+          </div>
+
         </section>
         <div class="flash-container shadow-right">
           <div id="flash" class="flash">
