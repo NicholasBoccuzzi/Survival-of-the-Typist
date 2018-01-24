@@ -204,25 +204,24 @@ box-shadow: 4px 4px 10px #00FF00;
 
 .directions-list {
   color:white;
-  font-size: 16px;
+  font-size: 14px;
   padding: 0px;
   margin: 10px 5px 10px 5px;
   text-align: left;
   text-decoration: none;
 }
 
-.directions-li {
-  font-size: 18px;
-  margin: 10px 0px 10px 0px;
-  text-decoration: none;
-
-}
-
 .directions-title {
   text-decoration: underline;
   margin: 10px 5px 10px 5px;
   color:white;
+  font-size: 20px;
 }
+.directions-li {
+  font-size: 16px;
+  margin: 10px 0px 10px 0px;
+}
+
 
 .directions-container {
   font-family: 'Geo', sans-serif;
@@ -245,6 +244,7 @@ box-shadow: 4px 4px 10px #00FF00;
 
 .blue {
   color: #00FFFF;
+  display:inline-block;
 }
 
 .white {
@@ -254,11 +254,13 @@ box-shadow: 4px 4px 10px #00FF00;
 
 .yellow {
   color: #FFFF00;
+  display:inline-block;
 }
 
 
 .red {
   color: red;
+  display:inline-block;
 }
 
 .left-indent {
@@ -278,27 +280,28 @@ box-shadow: 4px 4px 10px #00FF00;
 }
 
 .Letters {
-font-size: 20px;
+font-size: 16px;
 color: white;
 width: 20px;
 padding: 5px;
+margin: 0px 10px;
 border: 2px solid white;
 }
 
 .space-enter {
-  font-size: 14px;
+  font-size: 16px;
   border: 2px solid white;
-  width: 100px;
-  padding: 5px;
+  width: 80px;
+  padding: 2px;
 }
 
 .letter-container {
   text-align: center;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: space-between;
+  margin: 0px 20px 10px 20px;
 }
 
-.story {
+.directions-el {
   font-size: 16px;
   padding: 0px 20px;
   margin-bottom: 30px;
@@ -317,4 +320,10 @@ border: 2px solid white;
   justify-content: center;
   align-items: center;
   flex: .5 0 auto;
+}
+
+.how-to-play {
+  margin: 10px 10px 0px 10px;
+  text-align: center;
+  font-size: 10px;
 }
