@@ -301,6 +301,10 @@ border: 2px solid white;
   margin: 0px 20px 10px 20px;
 }
 
+.fa-blockthis:before {
+  content: "\f08c";
+}
+
 .directions-el {
   font-size: 16px;
   padding: 0px 20px;
