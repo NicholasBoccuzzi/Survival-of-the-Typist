@@ -11,36 +11,56 @@
   </head>
   <body>
 
-  <div class="align-center">
+  <div class="flex-col nav-bar">
+    <div class="flex-row">
+      <div class="sound-button animated slideInRight">
+        <div class="flex-row">
+          <i class="fa fa-volume-up volume" aria-hidden="true" class="black"></i>
+        </div>
+      </div>
+
+      <div class="animated zoomInDown">
+        <div class="title-text flex-row">
+        Survival
+        <div class="small-title-text flex-col">
+          <div>of</div> <div>the</div>
+        </div>
+        Typist
+        </div>
+      </div>
+
+      <div class="sound-button animated slideInRight">
+        <div class="flex-row">
+          <section class="flex-col">
+          <i class="fa fa-volume-up volume flipped" aria-hidden="true" class="black"></i>
+          <audio src="./audio/background.mp3" id="backgroundBeats" loop="true" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+
+    </div>
+
     <main class="game-container flex-row">
       <div class="flex-col left-margin animated slideInLeft">
-          <div class="sound-button left-indent">
-            <div class="flex-row centered">
-              <i class="fa fa-volume-up volume" aria-hidden="true" class="black"></i>
-              <div class="small-text">
-                Toggle Music
-              </div>
-            </div>
-          </div>
         <section class="directions-container">
           <div class="directions-title yellow">Typist's Commands</div>
           <div class="flex-row">
             <ul class="directions-list">
               <div class="directions-title directions-li">Function</div>
-              <div class="directions-li">start game</div>
-              <div class="directions-li">reload +7</div>
-              <div class="directions-li">reload +14</div>
-              <div class="directions-li">shield</div>
-              <div class="directions-li">teleport</div>
+              <div class="typist-li">start game</div>
+              <div class="typist-li">reload +7</div>
+              <div class="typist-li">reload +14</div>
+              <div class="typist-li">shield</div>
+              <div class="typist-li">teleport</div>
             </ul>
 
             <ul class="directions-list">
-              <div class="directions-title directions-li">Text</div>
-              <div class="directions-li">start</div>
-              <div class="directions-li">rl</div>
-              <div class="directions-li">reload</div>
-              <div class="directions-li">shield</div>
-              <div class="directions-li">tp</div>
+              <div class="directions-li typist-title">Text</div>
+              <div class="typist-li">start</div>
+              <div class="typist-li">rl</div>
+              <div class="typist-li">reload</div>
+              <div class="typist-li">shield</div>
+              <div class="typist-li">tp</div>
             </ul>
           </div>
         </section>
@@ -50,11 +70,6 @@
         </div>
       </div>
       <div class="flex-col">
-        <div class="animated zoomInDown">
-          <div class="title-text">
-          Survival of the Typist
-          </div>
-        </div>
         <div class="flex-col animated fadeIn">
           <canvas id="survivalTypist" class="canvas">
             <div class="white">
@@ -81,21 +96,6 @@
       </div>
 
       <div class="flex-col right-margin align-left animated slideInRight">
-        <div class="sound-button">
-          <div class="flex-row align-right">
-            <section class="flex-col">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <i class="fa fa-bullseye" aria-hidden="true"></i>
-            </section>
-            <div class="small-text space-right">
-              Toggle Music
-            </div>
-            <i class="fa fa-volume-up volume flipped" aria-hidden="true" class="black"></i>
-            <audio src="./audio/background.mp3" id="backgroundBeats" loop="true" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
         <section class="directions-container">
           <div class="directions-title">
             Controls
