@@ -43,60 +43,6 @@
     <main class="game-container flex-row">
       <div class="flex-col left-margin animated slideInLeft">
         <section class="directions-container">
-          <div class="directions-title yellow">Typist's Commands</div>
-          <div class="flex-row">
-            <ul class="directions-list">
-              <div class="directions-title directions-li">Function</div>
-              <div class="typist-li">start game</div>
-              <div class="typist-li">reload +7</div>
-              <div class="typist-li">reload +14</div>
-              <div class="typist-li">shield</div>
-              <div class="typist-li">teleport</div>
-            </ul>
-
-            <ul class="directions-list">
-              <div class="directions-li typist-title">Text</div>
-              <div class="typist-li">start</div>
-              <div class="typist-li">rl</div>
-              <div class="typist-li">reload</div>
-              <div class="typist-li">shield</div>
-              <div class="typist-li">tp</div>
-            </ul>
-          </div>
-        </section>
-        <div class="flash-container shadow-left">
-          <div id="flash" class="flash">
-          </div>
-        </div>
-      </div>
-      <div class="flex-col">
-        <div class="flex-col animated fadeIn">
-          <canvas id="survivalTypist" class="canvas">
-            <div class="white">
-              Hello
-            </div>
-          </canvas>
-          <div class="flex-row ui-containers">
-            <div class="ui-li border-right flex-row">
-              A: <div class="blue" id="ammo">
-              </div>
-            </div>
-            <div class="ui-li border-right flex-row">
-              S: <div id="shield">
-              </div>
-            </div>
-            <div class="ui-li border-right flex-row">
-              L: <div id="lives">
-              </div>
-            </div>
-
-          </div>
-          <input class="keyboard-input" type="text" id="myInput" value="" placeholder="TYPE START AND PRESS ENTER TO BEGIN"></input>
-        </div>
-      </div>
-
-      <div class="flex-col right-margin align-left animated slideInRight">
-        <section class="directions-container">
           <div class="directions-title">
             Controls
           </div>
@@ -167,12 +113,83 @@
               SURVIVE
             </div>
           </section>
-
         </section>
+
+        <div class="flash-container shadow-left">
+          <div id="flash" class="flash">
+          </div>
+        </div>
+      </div>
+      <div class="flex-col">
+        <div class="flex-col animated fadeIn">
+          <canvas id="survivalTypist" class="canvas">
+            <div class="white">
+              Hello
+            </div>
+          </canvas>
+          <div class="flex-row ui-containers">
+            <div class="ui-li border-right flex-row">
+              Ammo: <div class="blue" id="ammo">
+              </div>
+            </div>
+            <div class="ui-li border-right flex-row">
+              Shields: <div id="shield">
+              </div>
+            </div>
+            <div class="ui-li border-right flex-row">
+              Bombs: <div id="bomb">
+              </div>
+            </div>
+            <div class="ui-li border-right flex-row">
+              Lives: <div id="lives">
+              </div>
+            </div>
+
+          </div>
+          <input class="keyboard-input" type="text" id="myInput" value="" placeholder="TYPE START AND PRESS ENTER TO BEGIN"></input>
+        </div>
+      </div>
+
+      <div class="flex-col right-margin align-left animated slideInRight">
+
+        <section class="directions-container">
+          <div class="directions-title yellow">Typist's Commands</div>
+          <div class="flex-row">
+            <ul class="directions-list">
+              <div class="directions-title directions-li">Function</div>
+              <div class="typist-li">start game</div>
+              <div class="typist-li">reload +7</div>
+              <div class="typist-li">reload +14</div>
+              <div class="typist-li">shield</div>
+              <div class="typist-li">teleport</div>
+            </ul>
+
+            <ul class="directions-list">
+              <div class="directions-li typist-title">Text</div>
+              <div class="typist-li">start</div>
+              <div class="typist-li">rl</div>
+              <div class="typist-li">reload</div>
+              <div class="typist-li">shield</div>
+              <div class="typist-li">tp</div>
+            </ul>
+          </div>
+        </section>
+        
         <div class="flash-container shadow-right">
           <div id="scoreBoard" class="flash">
           </div>
         </div>
+        <section class="flex-row icon">
+          <a class="white" href="https://www.linkedin.com/in/nicholas-r-boccuzzi/">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          <a class="white" href="https://www.github.com/NicholasBoccuzzi">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a class="white" href="http://www.nicholasboccuzzi.com">
+            <i class="fa fa-bullseye" aria-hidden="true"></i>
+          </a>
+        </section>
       </div>
     </main>
   </div>

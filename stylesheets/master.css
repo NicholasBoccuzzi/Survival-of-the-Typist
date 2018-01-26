@@ -3,13 +3,14 @@ html, body {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   background-image: url("../images/trippybackground.gif");
   background-size: cover;
   background-position: center;
   font-family: 'Press Start 2P', sans-serif;
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 
 p {
@@ -73,6 +74,11 @@ p {
   width: 100px;
   margin: 15px 0px 0px 10px;
   cursor:pointer;
+}
+
+.scoreboard-text {
+  font-size: 8px;
+  text-decoration: underline;
 }
 
 .space-right {
@@ -247,7 +253,7 @@ box-shadow: 4px 4px 10px #00FF00;
   border: 2px solid #FF00FF;
   margin-top: 5px;
   width: 225px;
-  min-height: 350px;
+  min-height: 390px;
   background: black;
   box-shadow: 0px -3px 10px #FF00FF;
   text-align: center;
@@ -287,7 +293,7 @@ box-shadow: 4px 4px 10px #00FF00;
 }
 
 .ui-containers {
-  width: 600px;
+  width: 650px;
   border: 2px solid white;
   border-top: none;
   height: 20px;
@@ -355,5 +361,23 @@ border: 2px solid white;
 }
 
 .nav-bar {
-  margin-top: 20px;
+  display: flex;
+  align-self: center;
+  align-self: center;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+
+.icon {
+  color:white;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+.bomb-color {
+  color: #ffaa00;
+}
+
+.shield-color {
+  color: #00f9ff;
 }
