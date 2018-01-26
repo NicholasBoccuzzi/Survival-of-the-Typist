@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="animated zoomInDown">
+      <div id="title" class="animated zoomInDown">
         <div class="title-text flex-row">
         Survival
         <div class="small-title-text flex-col">
@@ -43,7 +43,7 @@
     <main class="game-container flex-row">
       <div class="flex-col left-margin animated slideInLeft">
         <section class="directions-container">
-          <div class="directions-title">
+          <div class="directions-title" id="keyControls">
             Controls
           </div>
           <div class="flex-row letter-container">
@@ -87,10 +87,6 @@
             </div>
           </div>
           <section class="how-to-play">
-            <div class="directions-title">
-              How to Play
-            </div>
-
             <div class="directions-li">
               Control the Square with W, A, S, D.
             </div>
@@ -115,7 +111,7 @@
           </section>
         </section>
 
-        <div class="flash-container shadow-left">
+        <div class="flash-container shadow-left" id="leftbox">
           <div id="flash" class="flash">
           </div>
         </div>
@@ -127,7 +123,7 @@
               Hello
             </div>
           </canvas>
-          <div class="flex-row ui-containers">
+          <div class="flex-row ui-containers" id="ui">
             <div class="ui-li border-right flex-row">
               Ammo: <div class="blue" id="ammo">
               </div>
@@ -156,26 +152,33 @@
           <div class="directions-title yellow">Typist's Commands</div>
           <div class="flex-row">
             <ul class="directions-list">
-              <div class="directions-title directions-li">Function</div>
-              <div class="typist-li">start game</div>
-              <div class="typist-li">reload +7</div>
-              <div class="typist-li">reload +14</div>
-              <div class="typist-li">shield</div>
-              <div class="typist-li">teleport</div>
-            </ul>
-
-            <ul class="directions-list">
               <div class="directions-li typist-title">Text</div>
               <div class="typist-li">start</div>
+              <div class="typist-li">restart</div>
+              <div class="typist-li">respawn</div>
               <div class="typist-li">rl</div>
               <div class="typist-li">reload</div>
+              <div class="typist-li">bomb</div>
               <div class="typist-li">shield</div>
               <div class="typist-li">tp</div>
             </ul>
+
+            <ul class="directions-list">
+              <div class="directions-title directions-li">Function</div>
+              <div class="typist-li">Start game</div>
+              <div class="typist-li">Restart game</div>
+              <div class="typist-li">Revive Red</div>
+              <div class="typist-li">Reload +7</div>
+              <div class="typist-li">Reload +14</div>
+              <div class="typist-li">Deploy bomb</div>
+              <div class="typist-li">Activate shield</div>
+              <div class="typist-li">Teleport</div>
+            </ul>
+
           </div>
         </section>
-        
-        <div class="flash-container shadow-right">
+
+        <div class="flash-container shadow-right" id="rightbox">
           <div id="scoreBoard" class="flash">
           </div>
         </div>
@@ -195,6 +198,7 @@
   </div>
     <audio src="./audio/RandF.mp3" id="intro" preload="true"/>
     <audio src="./audio/deathmarch.mp3" id="deathmarch" preload="true"/>
+    <audio src="./audio/story.mp3" id="storyMusic" preload="true"/>
 
     <script type="application/javascript" src="keybinding/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
