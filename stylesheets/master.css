@@ -415,3 +415,15 @@ border: 2px solid white;
   box-shadow: 0px -2px 10px red;
   border-color: red;
 }
+
+.high-score-list-container {
+  margin: auto;
+  border: 2px solid white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  background:black;
+  color: white;
+  width: 650px;
+  height: 400px;
+  box-shadow: 0px -2px 10px white;
+}

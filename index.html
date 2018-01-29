@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./stylesheets/master.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Faster+One|Geo:400i" rel="stylesheet">
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>Survival of the Typist</title>
   </head>
@@ -124,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="flex-col">
+      <div class="flex-col" id="gameContainer">
         <div class="flex-col animated fadeIn">
           <canvas id="survivalTypist" class="canvas">
             <div class="white">
@@ -153,6 +154,18 @@
           <input class="keyboard-input" type="text" id="myInput" value="" placeholder="TYPE START AND PRESS ENTER TO BEGIN"></input>
         </div>
       </div>
+
+        <div id="highScoreList"  class="flex-col animated fadeIn hide">
+          <div class="high-score-list-container">
+            <ul class="high-score-list">
+
+            </ul>
+          </div>
+          <input class="keyboard-input" type="text" id="highScoreInput" value="" placeholder="ENTER YOUR INITALS">
+          </input>
+        </div>
+
+
 
       <div class="flex-col right-margin align-left animated slideInRight">
 
@@ -206,7 +219,17 @@
       </div>
     </main>
   </div>
+
     <audio src="./audio/RandF.mp3" id="intro" preload="true"/>
+    <audio src="./audio/blaster.mp3" preload="true"/>
+    <audio src="./audio/emptyClip.mp3" preload="true"/>
+    <audio src="./audio/removeTriangle.mp3" preload="true"/>
+    <audio src="./audio/removeWall.mp3" preload="true"/>
+    <audio src="./audio/shield.mp3" preload="true"/>
+    <audio src="./audio/shieldRemove.mp3" preload="true"/>
+    <audio src="./audio/shutdown.mp3" preload="true"/>
+    <audio src="./audio/teleport.mp3" preload="true"/>
+    <audio src="./audio/bomb.mp3" preload="true"/>
     <audio src="./audio/deathmarch.mp3" id="deathmarch" preload="true"/>
     <audio src="./audio/story.mp3" id="storyMusic" preload="true"/>
 
