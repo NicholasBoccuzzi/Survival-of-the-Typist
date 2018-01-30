@@ -275,7 +275,10 @@ p {
 
 .yellow {
   color: #FFFF00;
-  display:inline-block;
+}
+
+.inline {
+  display: inline-block;
 }
 
 
@@ -399,17 +402,17 @@ border: 2px solid white;
 .red-box-shadow-left {
   box-shadow: -4px 4px 10px red;
   border-color:red;
+  padding-top: 200px;
   height: 250px;
-  margin-top: 250px;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .red-box-shadow-right {
   border-color: red;
   box-shadow: 4px 4px 10px red;
   height: 250px;
-  margin-top: 250px;
-  font-size: 30px;
+  padding-top: 200px;
+  font-size: 24px;
 }
 
 .red-canvas {
