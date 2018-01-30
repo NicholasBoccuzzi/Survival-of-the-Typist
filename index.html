@@ -141,12 +141,12 @@
             </div>
 
             <div class="directions-li">
-              Input a <div class="yellow inline"> Typist Command's</div> text
+              Input a <div class="yellow inline"> Typist Command's text</div>
                to perform its associated function.
             </div>
 
             <div class="directions-li">
-              EX: Type " rl " and press enter to reload the Square's ammo supply
+            <br/>
             </div>
 
             <div class="directions-title" id="howToPlay">
@@ -205,7 +205,7 @@
             </div>
 
           </div>
-          <input class="keyboard-input" type="text" id="myInput" value="" placeholder="TYPE A TEXT FROM 'TYPIST COMMANDS'"></input>
+          <input class="keyboard-input" type="text" id="myInput" value="" placeholder="Enter To Type A Command Text"></input>
         </div>
       </div>
 
@@ -224,15 +224,42 @@
 
 
 
-      <div class="flex-col right-margin align-left animated slideInRight">
+      <div id="switchCommands" class="flex-col right-margin align-left animated slideInRight">
 
-        <section class="directions-container">
+        <section id="outgame" class="directions-container hover-click">
+          <div class="small-title-font">
+            Click Here To Switch Instructions
+          </div>
           <div class="directions-title yellow">Typist's Commands</div>
           <div class="flex-row">
             <ul class="directions-list">
-              <div class="directions-li typist-title">Text</div>
+              <div class="directions-li typist-title yellow">Text</div>
               <div class="typist-li yellow">story</div>
               <div class="typist-li yellow">start</div>
+              <div class="typist-li yellow">restart</div>
+            </ul>
+
+            <ul class="directions-list">
+              <div class="directions-title directions-li">Function</div>
+              <div class="typist-li">Tell the Story</div>
+              <div class="typist-li">Start game</div>
+              <div class="typist-li">Restart game</div>
+            </ul>
+
+          </div>
+          <div class="small-title-font">
+            Click Here To Switch Instructions
+          </div>
+        </section>
+
+        <section id="ingame" class="directions-container hover-click hide">
+          <div class="small-title-font">
+            Click Here To Switch Instructions
+          </div>
+          <div class="directions-title yellow">Typist's Commands</div>
+          <div class="flex-row">
+            <ul class="directions-list">
+              <div class="directions-li typist-title yellow">Text</div>
               <div class="typist-li yellow">restart</div>
               <div class="typist-li yellow">revive</div>
               <div class="typist-li yellow">rl</div>
@@ -244,8 +271,6 @@
 
             <ul class="directions-list">
               <div class="directions-title directions-li">Function</div>
-              <div class="typist-li">Tell the Story</div>
-              <div class="typist-li">Start game</div>
               <div class="typist-li">Restart game</div>
               <div class="typist-li">Revive Red</div>
               <div class="typist-li">Ammo = 7</div>
@@ -255,6 +280,9 @@
               <div class="typist-li">Teleport</div>
             </ul>
 
+          </div>
+          <div class="small-title-font">
+            Click Here To Switch Instructions
           </div>
         </section>
 
