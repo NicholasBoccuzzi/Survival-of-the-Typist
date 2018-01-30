@@ -43,53 +43,96 @@
 
     <main class="game-container flex-row">
       <div class="flex-col left-margin animated slideInLeft">
-        <section class="directions-container">
-          <div class="directions-title" id="keyControls">
-            Controls
+        <section class="directions-container hover-click" id="switchDirections">
+          <div class="small-title-font">
+            Click to Switch Instructions
           </div>
-          <div class="flex-row letter-container">
-            <div class="flex-col">
-              <div class="Letters">
-                W
-              </div>
-              Up
+          <section id="keyControls">
+            <div class="directions-title">
+              Key Controls
             </div>
-            <div class="flex-col">
-              <div class="Letters">
-                S
+            <div class="flex-row letter-container">
+              <div class="flex-col">
+                <div class="Letters">
+                  W
+                </div>
+                Up
               </div>
-              Down
-            </div>
-            <div class="flex-col">
-              <div class="Letters">
-                A
+              <div class="flex-col">
+                <div class="Letters">
+                  S
+                </div>
+                Down
               </div>
-              Left
-            </div>
-            <div class="flex-col">
-              <div class="Letters">
-                D
+              <div class="flex-col">
+                <div class="Letters">
+                  A
+                </div>
+                Left
               </div>
-              Right
-            </div>
-          </div>
-          <div class="flex-row letter-container">
-            <div class="flex-col">
-              <div class="space-enter">
-                Enter
+              <div class="flex-col">
+                <div class="Letters">
+                  D
+                </div>
+                Right
               </div>
-            <div class="flex-row">  Switch<div class="blue">Input</div></div>
             </div>
-            <div class="flex-col">
-              <div class="space-enter">
-                Space
+            <div class="margin-bottom-directions">
+            OR
+            </div>
+            <div class="flex-row letter-container margin-bottom-directions">
+              <div class="flex-col">
+                <div class="Letters">
+                  <div class="fa fa-arrow-up">
+                  </div>
+                </div>
+                Up
               </div>
-              Fire Blaster
+              <div class="flex-col">
+                <div class="Letters">
+                  <div class="fa fa-arrow-down">
+                  </div>
+                </div>
+                Down
+              </div>
+              <div class="flex-col">
+                <div class="Letters">
+                  <div class="fa fa-arrow-left">
+                  </div>
+                </div>
+                Left
+              </div>
+              <div class="flex-col">
+                <div class="Letters">
+                  <div class="fa fa-arrow-right">
+                  </div>
+                </div>
+                Right
+              </div>
             </div>
-          </div>
-          <section class="how-to-play">
+              <div class="flex-col margin-top-directions">
+                <div class="space-enter">
+                  Enter
+                </div>
+              <div class="inline-block margin-bottom-directions">
+                <div class="blue">Switch</div> Input</div>
+              </div>
+              <div class="flex-col">
+                <div class="space-enter">
+                  Space
+                </div>
+                <div class="margin-bottom-directions">
+                  Fire Blaster
+                </div>
+              </div>
+          </section>
+          <section class="how-to-play hide" id="howToPlay">
+            <div class="directions-title" id="howToPlay">
+              How To Play
+            </div>
+
             <div class="directions-li">
-              Control the Square with W, A, S, D.
+              Control the Square with W, A, S, D <br/>or the direction arrows
             </div>
 
             <div class="directions-li">
@@ -106,6 +149,14 @@
               EX: Type " rl " and press enter to reload the Square's ammo supply
             </div>
 
+            <div class="directions-title" id="howToPlay">
+              Tips
+            </div>
+
+            <div class="directions-li">
+              Reload as often as possible
+            </div>
+
             <div class="directions-li">
               Destroy the Walls!
             </div>
@@ -118,6 +169,9 @@
               SURVIVE
             </div>
           </section>
+          <div class="small-title-font">
+            Click to Switch Instructions
+          </div>
         </section>
 
         <div class="flash-container shadow-left" id="leftbox">
@@ -157,7 +211,10 @@
 
         <div id="highScoreList"  class="flex-col animated fadeIn hide">
           <div class="high-score-list-container">
-            <ul class="high-score-list">
+            <div class="high-score-title">
+              Leaderboard
+            </div>
+            <ul class="high-score-list" id=highScoreUL>
 
             </ul>
           </div>
@@ -232,6 +289,8 @@
     <audio src="./audio/bomb.mp3" preload="true"/>
     <audio src="./audio/deathmarch.mp3" id="deathmarch" preload="true"/>
     <audio src="./audio/story.mp3" id="storyMusic" preload="true"/>
+    <audio src="./audio/addPoints.mp3" id="storyMusic" preload="true"/>
+    <audio src="./audio/addInitial.mp3" id="storyMusic" preload="true"/>
 
     <script type="application/javascript" src="keybinding/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>

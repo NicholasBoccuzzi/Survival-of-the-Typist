@@ -46,7 +46,7 @@ p {
 
 .title-text {
   font-family: 'Press Start 2P', sans-serif;
-  color: white;
+  color: black;
   text-shadow:
     -2px -2px 0 #00FFFF,
     2px -2px 0 #FFFF00,
@@ -310,10 +310,11 @@ border: 2px solid white;
 }
 
 .space-enter {
+  margin: 0 auto;
   font-size: 16px;
   border: 2px solid white;
-  width: 80px;
-  padding: 2px;
+  width: 160px;
+  padding: 4px;
 }
 
 .letter-container {
@@ -426,4 +427,48 @@ border: 2px solid white;
   width: 650px;
   height: 400px;
   box-shadow: 0px -2px 10px white;
+}
+
+.small-title-font {
+  margin-top: 5px;
+  font-size: 10px;
+  color: lightgrey;
+}
+
+.margin-bottom-directions {
+  margin-bottom: 15px;
+}
+
+.margin-top-directions {
+  margin-top: 25px;
+}
+
+.hover-click {
+  cursor: pointer;
+}
+
+.high-score-li {
+  font-size: 24px;
+  margin: 40px auto;
+  text-align:left;
+}
+
+.high-score-list {
+  list-style: none;
+}
+
+.colors {
+  animation: color 2.9s infinite;
+}
+
+.high-score-title {
+  font-size: 30px;
+  color: black;
+  text-shadow:
+    -1px -1px 0 #00FFFF,
+    1px -1px 0 #FFFF00,
+    -1px 1px 0 #FF00FF,
+    1px 1px 0 #00FF00;
+  text-decoration: underline;
+  margin-top: 15px;
 }
