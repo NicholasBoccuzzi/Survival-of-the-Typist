@@ -477,3 +477,7 @@ border: 2px solid white;
   text-decoration: underline;
   margin-top: 15px;
 }
+
+.no-underline {
+  text-decoration: none;
+}
