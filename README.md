@@ -71,59 +71,59 @@ This project will be implemented with the following technologies:
 
 **Day 4**:
 
--Created a class for Fast_Enemies that inherit from the class Moving Object
--Fast_Enemies start out with a given velocity pointed towards targets
--Fast Enemies are drawn as triangles
--Gave the Avatar parameters that will keep it within the walls of the canvas
+- Created a class for Fast_Enemies that inherit from the class Moving Object
+- Fast_Enemies start out with a given velocity pointed towards targets
+- Fast Enemies are drawn as triangles
+- Gave the Avatar parameters that will keep it within the walls of the canvas
 
 **Day 5**:
 
--Created a class for Slow_Enemies that inherit from the class Moving Object
--Slow Enemies can either take up the entire width or height of the canvas
--Extended Out of bounds to be the canvas size + 50 in all directions to allow enemies to be generated off screen before working their way in
+- Created a class for Slow_Enemies that inherit from the class Moving Object
+- Slow Enemies can either take up the entire width or height of the canvas
+- Extended Out of bounds to be the canvas size + 50 in all directions to allow enemies to be generated off screen before working their way in
 
 **Day 6**:
 
--Added first sound effect for bullet fire by creating new HTML Audio Elements any time space bar is pressed
--Created Input field for user typing
--Mapped "Enter" to toggle between input field and the canvas
--Gave the avatar a limit to number of bullets created
--Created HTML container that flashes "Reload" when out of ammo
--Created Event Listener for input field for given input "Reload" that will clear input value and reload avatar ammo stock
+- Added first sound effect for bullet fire by creating new HTML Audio Elements any time space bar is pressed
+- Created Input field for user typing
+- Mapped "Enter" to toggle between input field and the canvas
+- Gave the avatar a limit to number of bullets created
+- Created HTML container that flashes "Reload" when out of ammo
+- Created Event Listener for input field for given input "Reload" that will clear input value and reload avatar ammo stock
 
 **Day 7**:
--Thought of and Implemented unique positional tracking
--Added background music for the game
+- Thought of and Implemented unique positional tracking
+- Added background music for the game
 
 **Day 8**:
--Thought of and Implemented unique collision detection
--Added sound effect for
+- Thought of and Implemented unique collision detection
+- Added sound effect for
 
 **Day 9**
--Added Shield, Bomb, and Teleport functionality for the avatar
--Added text inputs for the Shield, Bomb, Teleport functionalities that are triggered through events
--Crafted death animations for avatar
+- Added Shield, Bomb, and Teleport functionality for the avatar
+- Added text inputs for the Shield, Bomb, Teleport functionalities that are triggered through events
+- Crafted death animations for avatar
 
 **Day 10**:
--Implemented a main menu (game does not start until Typed "Start")
--Added a "Story" to the game
--Story is triggered by typing "Story"
--Tweaked difficulty of the game
+- Implemented a main menu (game does not start until Typed "Start")
+- Added a "Story" to the game
+- Story is triggered by typing "Story"
+- Tweaked difficulty of the game
 
 **Day 11**:
--Began implementing high scores through firebase
--Added player directions to help new players understand how to play the game
--Tweaked difficulty of the game
+- Began implementing high scores through firebase
+- Added player directions to help new players understand how to play the game
+- Tweaked difficulty of the game
 
 **Day 12**:
--Added Directions
--Finished high score implementation
--Tweaked difficulty of the game
+- Added Directions
+- Finished high score implementation
+- Tweaked difficulty of the game
 
 
 **Day 13**:
--Added onload event for background gif to smooth out the loading process for the game
--Full game live and linked to my personal website
+- Added onload event for background gif to smooth out the loading process for the game
+- Full game live and linked to my personal website
 
 ### Bonus features
 
