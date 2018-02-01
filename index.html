@@ -11,305 +11,302 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>Survival of the Typist</title>
   </head>
+
+  <body>
   <div id="loading" class="loading-screen">
-    <div flex-col>
-      <i class="fa fa-spinner fa-spin" style="font-size:100px"></i>
-      <div>
-        Please Wait
-      </div>
+    <i class="fa fa-spinner fa-spin" style="font-size:100px"></i>
+    <div>
+      Please Wait
     </div>
   </div>
-
-  <body class="hide">
-
-
-  <div class="flex-col nav-bar">
-    <div class="flex-row">
-      <div class="sound-button animated slideInRight">
-        <div class="flex-row">
-          <i class="fa fa-volume-up volume" aria-hidden="true" class="black"></i>
+  <div id="main" class="hide">
+    <div class="flex-col nav-bar">
+      <div class="flex-row">
+        <div class="sound-button animated slideInRight">
+          <div class="flex-row">
+            <i class="fa fa-volume-up volume" aria-hidden="true" class="black"></i>
+          </div>
         </div>
+
+        <div id="title" class="animated zoomInDown">
+          <div class="title-text flex-row">
+          Survival
+          <div class="small-title-text flex-col">
+            <div>of</div> <div>the</div>
+          </div>
+          Typist
+          </div>
+        </div>
+
+        <div class="sound-button animated slideInRight">
+          <div class="flex-row">
+            <section class="flex-col">
+            <i class="fa fa-volume-up volume flipped" aria-hidden="true" class="black"></i>
+            <audio src="./audio/background.mp3" id="backgroundBeats" loop="true" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+
       </div>
 
-      <div id="title" class="animated zoomInDown">
-        <div class="title-text flex-row">
-        Survival
-        <div class="small-title-text flex-col">
-          <div>of</div> <div>the</div>
-        </div>
-        Typist
-        </div>
-      </div>
+      <main class="game-container flex-row">
+        <div class="flex-col left-margin animated slideInLeft">
+          <section class="directions-container hover-click" id="switchDirections">
+            <section id="keyControls">
+              <div class="directions-title">
+                Key Controls
+              </div>
+              <div class="flex-row letter-container">
+                <div class="flex-col">
+                  <div class="Letters">
+                    W
+                  </div>
+                  Up
+                </div>
+                <div class="flex-col">
+                  <div class="Letters">
+                    S
+                  </div>
+                  Down
+                </div>
+                <div class="flex-col">
+                  <div class="Letters">
+                    A
+                  </div>
+                  Left
+                </div>
+                <div class="flex-col">
+                  <div class="Letters">
+                    D
+                  </div>
+                  Right
+                </div>
+              </div>
+              <div class="margin-bottom-directions">
+              OR
+              </div>
+              <div class="flex-row letter-container margin-bottom-directions">
+                <div class="flex-col">
+                  <div class="Letters">
+                    <div class="fa fa-arrow-up">
+                    </div>
+                  </div>
+                  Up
+                </div>
+                <div class="flex-col">
+                  <div class="Letters">
+                    <div class="fa fa-arrow-down">
+                    </div>
+                  </div>
+                  Down
+                </div>
+                <div class="flex-col">
+                  <div class="Letters">
+                    <div class="fa fa-arrow-left">
+                    </div>
+                  </div>
+                  Left
+                </div>
+                <div class="flex-col">
+                  <div class="Letters">
+                    <div class="fa fa-arrow-right">
+                    </div>
+                  </div>
+                  Right
+                </div>
+              </div>
+                <div class="flex-col margin-top-directions">
+                  <div class="space-enter">
+                    Enter
+                  </div>
+                <div class="inline-block margin-bottom-directions">
+                  <div class="blue">Switch</div> Input</div>
+                </div>
+                <div class="flex-col">
+                  <div class="space-enter">
+                    Space
+                  </div>
+                  <div class="margin-bottom-directions">
+                    Fire Blaster
+                  </div>
+                </div>
+                <div class="small-title-font no-underline">
+                  Try moving around before start the game!
+                </div>
+            </section>
+            <section class="how-to-play hide" id="howToPlay">
+              <div class="directions-title" id="howToPlay">
+                How To Play
+              </div>
 
-      <div class="sound-button animated slideInRight">
-        <div class="flex-row">
-          <section class="flex-col">
-          <i class="fa fa-volume-up volume flipped" aria-hidden="true" class="black"></i>
-          <audio src="./audio/background.mp3" id="backgroundBeats" loop="true" type="audio/mpeg">
-          </audio>
-        </div>
-      </div>
+              <div class="directions-li">
+                Control the Square with W, A, S, D <br/>or the direction arrows
+              </div>
 
+              <div class="directions-li">
+                Press Enter to switch between <div class="blue">Text Input</div>
+                and the  <div class="RedSquare"></div>Square.
+              </div>
+
+              <div class="directions-li">
+                Input a <div class="yellow inline"> Typist Command's text</div>
+                 to perform its associated function.
+              </div>
+
+              <div class="directions-li">
+              <br/>
+              </div>
+
+              <div class="directions-title" id="howToPlay">
+                Tips
+              </div>
+
+              <div class="directions-li">
+                Reload as often as possible
+              </div>
+
+              <div class="directions-li">
+                Destroy the Walls!
+              </div>
+
+              <div class="directions-li">
+                Destroy the Tris!
+              </div>
+
+              <div class="directions-li">
+                SURVIVE
+              </div>
+            </section>
+            <div class="small-title-font">
+              Click Here to Switch Instructions
+            </div>
+          </section>
+
+          <div class="flash-container shadow-left" id="leftbox">
+            <div id="flash" class="flash">
+            </div>
+          </div>
+        </div>
+        <div class="flex-col" id="gameContainer">
+          <div class="flex-col animated fadeIn">
+            <canvas id="survivalTypist" class="canvas">
+              <div class="white">
+                Hello
+              </div>
+            </canvas>
+            <div class="flex-row ui-containers" id="ui">
+              <div class="ui-li border-right flex-row">
+                Ammo: <div class="blue" id="ammo">
+                </div>
+              </div>
+              <div class="ui-li border-right flex-row">
+                Shields: <div id="shield">
+                </div>
+              </div>
+              <div class="ui-li border-right flex-row">
+                Bombs: <div id="bomb">
+                </div>
+              </div>
+              <div class="ui-li border-right flex-row">
+                Lives: <div id="lives">
+                </div>
+              </div>
+
+            </div>
+            <input class="keyboard-input" type="text" id="myInput" value="" placeholder="Enter To Type A Command Text"></input>
+          </div>
+        </div>
+
+          <div id="highScoreList"  class="flex-col animated fadeIn hide">
+            <div class="high-score-list-container">
+              <div class="high-score-title">
+                Leaderboard
+              </div>
+              <ul class="high-score-list" id=highScoreUL>
+
+              </ul>
+            </div>
+            <input class="keyboard-input" type="text" id="highScoreInput" value="" placeholder="ENTER YOUR INITALS">
+            </input>
+          </div>
+
+
+
+        <div id="switchCommands" class="flex-col right-margin align-left animated slideInRight">
+
+          <section id="outgame" class="directions-container hover-click">
+            <div class="directions-title yellow">Typist's Commands</div>
+            <div class="flex-row">
+              <ul class="directions-list">
+                <div class="directions-li typist-title yellow">Text</div>
+                <div class="typist-li yellow">story</div>
+                <div class="typist-li yellow">start</div>
+                <div class="typist-li yellow">restart</div>
+              </ul>
+
+              <ul class="directions-list">
+                <div class="directions-title directions-li">Function</div>
+                <div class="typist-li">Tell the Story</div>
+                <div class="typist-li">Start game</div>
+                <div class="typist-li">Restart game</div>
+              </ul>
+
+            </div>
+            <div class="small-title-font">
+              Click Here To Switch Instructions
+            </div>
+          </section>
+
+          <section id="ingame" class="directions-container hover-click hide">
+            <div class="directions-title yellow">Typist's Commands</div>
+            <div class="flex-row">
+              <ul class="directions-list">
+                <div class="directions-li typist-title yellow">Text</div>
+                <div class="typist-li yellow">restart</div>
+                <div class="typist-li yellow">revive</div>
+                <div class="typist-li yellow">rl</div>
+                <div class="typist-li yellow">reload</div>
+                <div class="typist-li yellow">bomb</div>
+                <div class="typist-li yellow">shield</div>
+                <div class="typist-li yellow">tp</div>
+              </ul>
+
+              <ul class="directions-list">
+                <div class="directions-title directions-li">Function</div>
+                <div class="typist-li">Restart game</div>
+                <div class="typist-li">Revive Red</div>
+                <div class="typist-li">Ammo = 7</div>
+                <div class="typist-li">Ammo = 14</div>
+                <div class="typist-li">Deploy bomb</div>
+                <div class="typist-li">Activate shield</div>
+                <div class="typist-li">Teleport</div>
+              </ul>
+
+            </div>
+            <div class="small-title-font">
+              Click Here To Switch Instructions
+            </div>
+          </section>
+
+          <div class="flash-container shadow-right" id="rightbox">
+            <div id="scoreBoard" class="flash">
+            </div>
+          </div>
+          <section class="flex-row icon">
+            <a class="white" href="https://www.linkedin.com/in/nicholas-r-boccuzzi/">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            <a class="white" href="https://www.github.com/NicholasBoccuzzi">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a class="white" href="http://www.nicholasboccuzzi.com">
+              <i class="fa fa-bullseye" aria-hidden="true"></i>
+            </a>
+          </section>
+        </div>
+      </main>
     </div>
-
-    <main class="game-container flex-row">
-      <div class="flex-col left-margin animated slideInLeft">
-        <section class="directions-container hover-click" id="switchDirections">
-          <section id="keyControls">
-            <div class="directions-title">
-              Key Controls
-            </div>
-            <div class="flex-row letter-container">
-              <div class="flex-col">
-                <div class="Letters">
-                  W
-                </div>
-                Up
-              </div>
-              <div class="flex-col">
-                <div class="Letters">
-                  S
-                </div>
-                Down
-              </div>
-              <div class="flex-col">
-                <div class="Letters">
-                  A
-                </div>
-                Left
-              </div>
-              <div class="flex-col">
-                <div class="Letters">
-                  D
-                </div>
-                Right
-              </div>
-            </div>
-            <div class="margin-bottom-directions">
-            OR
-            </div>
-            <div class="flex-row letter-container margin-bottom-directions">
-              <div class="flex-col">
-                <div class="Letters">
-                  <div class="fa fa-arrow-up">
-                  </div>
-                </div>
-                Up
-              </div>
-              <div class="flex-col">
-                <div class="Letters">
-                  <div class="fa fa-arrow-down">
-                  </div>
-                </div>
-                Down
-              </div>
-              <div class="flex-col">
-                <div class="Letters">
-                  <div class="fa fa-arrow-left">
-                  </div>
-                </div>
-                Left
-              </div>
-              <div class="flex-col">
-                <div class="Letters">
-                  <div class="fa fa-arrow-right">
-                  </div>
-                </div>
-                Right
-              </div>
-            </div>
-              <div class="flex-col margin-top-directions">
-                <div class="space-enter">
-                  Enter
-                </div>
-              <div class="inline-block margin-bottom-directions">
-                <div class="blue">Switch</div> Input</div>
-              </div>
-              <div class="flex-col">
-                <div class="space-enter">
-                  Space
-                </div>
-                <div class="margin-bottom-directions">
-                  Fire Blaster
-                </div>
-              </div>
-              <div class="small-title-font no-underline">
-                Try moving around before start the game!
-              </div>
-          </section>
-          <section class="how-to-play hide" id="howToPlay">
-            <div class="directions-title" id="howToPlay">
-              How To Play
-            </div>
-
-            <div class="directions-li">
-              Control the Square with W, A, S, D <br/>or the direction arrows
-            </div>
-
-            <div class="directions-li">
-              Press Enter to switch between <div class="blue">Text Input</div>
-              and the  <div class="RedSquare"></div>Square.
-            </div>
-
-            <div class="directions-li">
-              Input a <div class="yellow inline"> Typist Command's text</div>
-               to perform its associated function.
-            </div>
-
-            <div class="directions-li">
-            <br/>
-            </div>
-
-            <div class="directions-title" id="howToPlay">
-              Tips
-            </div>
-
-            <div class="directions-li">
-              Reload as often as possible
-            </div>
-
-            <div class="directions-li">
-              Destroy the Walls!
-            </div>
-
-            <div class="directions-li">
-              Destroy the Tris!
-            </div>
-
-            <div class="directions-li">
-              SURVIVE
-            </div>
-          </section>
-          <div class="small-title-font">
-            Click Here to Switch Instructions
-          </div>
-        </section>
-
-        <div class="flash-container shadow-left" id="leftbox">
-          <div id="flash" class="flash">
-          </div>
-        </div>
-      </div>
-      <div class="flex-col" id="gameContainer">
-        <div class="flex-col animated fadeIn">
-          <canvas id="survivalTypist" class="canvas">
-            <div class="white">
-              Hello
-            </div>
-          </canvas>
-          <div class="flex-row ui-containers" id="ui">
-            <div class="ui-li border-right flex-row">
-              Ammo: <div class="blue" id="ammo">
-              </div>
-            </div>
-            <div class="ui-li border-right flex-row">
-              Shields: <div id="shield">
-              </div>
-            </div>
-            <div class="ui-li border-right flex-row">
-              Bombs: <div id="bomb">
-              </div>
-            </div>
-            <div class="ui-li border-right flex-row">
-              Lives: <div id="lives">
-              </div>
-            </div>
-
-          </div>
-          <input class="keyboard-input" type="text" id="myInput" value="" placeholder="Enter To Type A Command Text"></input>
-        </div>
-      </div>
-
-        <div id="highScoreList"  class="flex-col animated fadeIn hide">
-          <div class="high-score-list-container">
-            <div class="high-score-title">
-              Leaderboard
-            </div>
-            <ul class="high-score-list" id=highScoreUL>
-
-            </ul>
-          </div>
-          <input class="keyboard-input" type="text" id="highScoreInput" value="" placeholder="ENTER YOUR INITALS">
-          </input>
-        </div>
-
-
-
-      <div id="switchCommands" class="flex-col right-margin align-left animated slideInRight">
-
-        <section id="outgame" class="directions-container hover-click">
-          <div class="directions-title yellow">Typist's Commands</div>
-          <div class="flex-row">
-            <ul class="directions-list">
-              <div class="directions-li typist-title yellow">Text</div>
-              <div class="typist-li yellow">story</div>
-              <div class="typist-li yellow">start</div>
-              <div class="typist-li yellow">restart</div>
-            </ul>
-
-            <ul class="directions-list">
-              <div class="directions-title directions-li">Function</div>
-              <div class="typist-li">Tell the Story</div>
-              <div class="typist-li">Start game</div>
-              <div class="typist-li">Restart game</div>
-            </ul>
-
-          </div>
-          <div class="small-title-font">
-            Click Here To Switch Instructions
-          </div>
-        </section>
-
-        <section id="ingame" class="directions-container hover-click hide">
-          <div class="directions-title yellow">Typist's Commands</div>
-          <div class="flex-row">
-            <ul class="directions-list">
-              <div class="directions-li typist-title yellow">Text</div>
-              <div class="typist-li yellow">restart</div>
-              <div class="typist-li yellow">revive</div>
-              <div class="typist-li yellow">rl</div>
-              <div class="typist-li yellow">reload</div>
-              <div class="typist-li yellow">bomb</div>
-              <div class="typist-li yellow">shield</div>
-              <div class="typist-li yellow">tp</div>
-            </ul>
-
-            <ul class="directions-list">
-              <div class="directions-title directions-li">Function</div>
-              <div class="typist-li">Restart game</div>
-              <div class="typist-li">Revive Red</div>
-              <div class="typist-li">Ammo = 7</div>
-              <div class="typist-li">Ammo = 14</div>
-              <div class="typist-li">Deploy bomb</div>
-              <div class="typist-li">Activate shield</div>
-              <div class="typist-li">Teleport</div>
-            </ul>
-
-          </div>
-          <div class="small-title-font">
-            Click Here To Switch Instructions
-          </div>
-        </section>
-
-        <div class="flash-container shadow-right" id="rightbox">
-          <div id="scoreBoard" class="flash">
-          </div>
-        </div>
-        <section class="flex-row icon">
-          <a class="white" href="https://www.linkedin.com/in/nicholas-r-boccuzzi/">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-          <a class="white" href="https://www.github.com/NicholasBoccuzzi">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a class="white" href="http://www.nicholasboccuzzi.com">
-            <i class="fa fa-bullseye" aria-hidden="true"></i>
-          </a>
-        </section>
-      </div>
-    </main>
-  </div>
-
+    </div>
     <audio src="./audio/RandF.mp3" id="intro" preload="true"/>
     <audio src="./audio/blaster.mp3" preload="true"/>
     <audio src="./audio/emptyClip.mp3" preload="true"/>
