@@ -483,6 +483,12 @@ border: 2px solid white;
 }
 
 .loading-screen {
+  display:flex;
+  flex: 1 0 auto;
+  font-size: 100px;
+}
+
+.center-main {
   flex: 1 0 auto;
   font-size: 100px;
 }
