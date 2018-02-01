@@ -492,9 +492,8 @@ border: 2px solid white;
 }
 
 .main-centered {
-  display: flex
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: .5 0 auto;
+  flex: 1 0 auto;
 }
