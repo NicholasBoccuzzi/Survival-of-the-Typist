@@ -382,10 +382,6 @@ border: 2px solid white;
   color: #00f9ff;
 }
 
-.hide {
-  display: none;
-}
-
 .shadow-right {
   box-shadow: 4px 4px 10px #00FF00;
 }
@@ -485,4 +481,8 @@ border: 2px solid white;
 .loading-font {
   font-family: 'Geo', sans-serif;
   font-size: 100px;
+}
+
+.hide {
+  display: none;
 }
