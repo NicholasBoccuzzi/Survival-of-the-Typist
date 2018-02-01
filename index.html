@@ -11,34 +11,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>Survival of the Typist</title>
   </head>
-  <body>
-    <div class="flex-col nav-bar">
-      <div class="flex-row">
-        <div class="sound-button animated slideInRight">
-          <div class="flex-row">
-            <i class="fa fa-volume-up volume" aria-hidden="true" class="black"></i>
-          </div>
-        </div>
+  <body class="hide">
 
-        <div id="title" class="animated zoomInDown">
-          <div class="title-text flex-row">
-          Survival
-          <div class="small-title-text flex-col">
-            <div>of</div> <div>the</div>
-          </div>
-          Typist
-          </div>
-        </div>
-
-        <div class="sound-button animated slideInRight">
-          <div class="flex-row">
-            <section class="flex-col">
-            <i class="fa fa-volume-up volume flipped" aria-hidden="true" class="black"></i>
-            <audio src="./audio/background.mp3" id="backgroundBeats" loop="true" type="audio/mpeg">
-            </audio>
-          </div>
+  <div class="flex-col nav-bar">
+    <div class="flex-row">
+      <div class="sound-button animated slideInRight">
+        <div class="flex-row">
+          <i class="fa fa-volume-up volume" aria-hidden="true" class="black"></i>
         </div>
       </div>
+
+      <div id="title" class="animated zoomInDown">
+        <div class="title-text flex-row">
+        Survival
+        <div class="small-title-text flex-col">
+          <div>of</div> <div>the</div>
+        </div>
+        Typist
+        </div>
+      </div>
+
+      <div class="sound-button animated slideInRight">
+        <div class="flex-row">
+          <section class="flex-col">
+          <i class="fa fa-volume-up volume flipped" aria-hidden="true" class="black"></i>
+          <audio src="./audio/background.mp3" id="backgroundBeats" loop="true" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+
     </div>
 
     <main class="game-container flex-row">
@@ -297,7 +298,7 @@
         </section>
       </div>
     </main>
-
+  </div>
 
     <audio src="./audio/RandF.mp3" id="intro" preload="true"/>
     <audio src="./audio/blaster.mp3" preload="true"/>
