@@ -481,3 +481,8 @@ border: 2px solid white;
 .no-underline {
   text-decoration: none;
 }
+
+.loading-screen {
+  flex: 1 0 auto;
+  font-size: 100px;
+}
