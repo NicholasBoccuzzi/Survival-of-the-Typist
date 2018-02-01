@@ -382,10 +382,6 @@ border: 2px solid white;
   color: #00f9ff;
 }
 
-.hide {
-  display: none;
-}
-
 .shadow-right {
   box-shadow: 4px 4px 10px #00FF00;
 }
@@ -483,12 +479,16 @@ border: 2px solid white;
 }
 
 .loading-screen {
-  display:flex;
-  flex: 1 0 auto;
+  margin: auto;
+  text-align:center;
   font-size: 100px;
 }
 
 .center-main {
+  display: flex;
   flex: 1 0 auto;
-  font-size: 100px;
+}
+
+.hide {
+  display: none;
 }
