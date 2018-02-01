@@ -481,3 +481,12 @@ border: 2px solid white;
 .no-underline {
   text-decoration: none;
 }
+
+.loading-font {
+  font-family: 'Geo', sans-serif;
+  font-size: 100px;
+}
+
+.center-screen {
+  margin: 200px auto;
+}
