@@ -490,3 +490,11 @@ border: 2px solid white;
 .center-screen {
   margin: 200px auto;
 }
+
+.main-centered {
+  display: flex
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: .5 0 auto;
+}
