@@ -383,7 +383,7 @@ border: 2px solid white;
 }
 
 .hide {
-  display: none !important;
+  display: hidden !important;
 }
 
 .shadow-right {
