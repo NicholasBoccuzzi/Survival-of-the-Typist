@@ -383,7 +383,7 @@ border: 2px solid white;
 }
 
 .hide {
-  display: none; 
+  display: none;
 }
 
 .shadow-right {
@@ -485,15 +485,4 @@ border: 2px solid white;
 .loading-font {
   font-family: 'Geo', sans-serif;
   font-size: 100px;
-}
-
-.center-screen {
-  margin: 200px auto;
-}
-
-.main-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 auto;
 }
