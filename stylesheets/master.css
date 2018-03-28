@@ -482,6 +482,7 @@ border: 2px solid white;
   text-align:center;
   font-size: 100px;
   color: white;
+  z-index: 999;
 }
 
 .center-main {
@@ -521,4 +522,32 @@ border: 2px solid white;
     width: auto;
     height: 100%;
   }
+}
+
+.tutorial-container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  z-index: 900;
+  text-align: center;
+}
+
+.tutorial-text {
+  margin: auto;
+  color: white;
+  font-size: 40px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
