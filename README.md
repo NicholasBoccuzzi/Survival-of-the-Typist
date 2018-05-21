@@ -1,4 +1,6 @@
-## JS Project Proposal: Survival of the Typist
+## Survival of the Typist
+
+[Live Link](http://www.nicholasboccuzzi.com/survival-of-the-typist)
 
 ### Background
 
