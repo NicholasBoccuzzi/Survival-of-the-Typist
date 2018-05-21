@@ -1,6 +1,6 @@
 ## Survival of the Typist
 
-[Live Link](http://www.nicholasboccuzzi.com/survival-of-the-typist)
+[Live Link](http://nicholasboccuzzi.com/Survival-of-the-Typist/)
 
 ### Background
 
